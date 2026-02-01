@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags:
+  - Ground
+  - Obstacle
+  - Enemy
+  - Collectable
+  - Stage
+  - Hidable
+  - Portal
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Wall
+    uniqueID: 2205933259
+    locked: 0
+  - name: Floor
+    uniqueID: 3763619155
+    locked: 0
+  - name: Decoration
+    uniqueID: 3023969159
+    locked: 0
+  - name: Collectable
+    uniqueID: 2915958723
+    locked: 0
+  - name: Player
+    uniqueID: 410996119
+    locked: 0
+  m_RenderingLayers:
+  - Default

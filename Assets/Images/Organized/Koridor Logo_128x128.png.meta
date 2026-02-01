@@ -1,0 +1,676 @@
+fileFormatVersion: 2
+guid: 68ed6961957673742aaec062c043882f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3784193354875158820
+    second: Koridor Logo_128x128_0
+  - first:
+      213: 4717285563116455847
+    second: Koridor Logo_128x128_1
+  - first:
+      213: -5552913553865739074
+    second: Koridor Logo_128x128_2
+  - first:
+      213: 4658383380931619397
+    second: Koridor Logo_128x128_3
+  - first:
+      213: 5652678359142303614
+    second: Koridor Logo_128x128_4
+  - first:
+      213: 4000132226868653929
+    second: Koridor Logo_128x128_5
+  - first:
+      213: -3892428224583688183
+    second: Koridor Logo_128x128_6
+  - first:
+      213: 8268195744551420116
+    second: Koridor Logo_128x128_7
+  - first:
+      213: -5070100889730530707
+    second: Koridor Logo_128x128_8
+  - first:
+      213: 5953284686264056202
+    second: Koridor Logo_128x128_9
+  - first:
+      213: -337261481576878603
+    second: Koridor Logo_128x128_10
+  - first:
+      213: 4607126952949533336
+    second: Koridor Logo_128x128_11
+  - first:
+      213: -3228520303913409182
+    second: Koridor Logo_128x128_12
+  - first:
+      213: -238578500570819959
+    second: Koridor Logo_128x128_13
+  - first:
+      213: -4086732486028643053
+    second: Koridor Logo_128x128_14
+  - first:
+      213: 4788837682427231834
+    second: Koridor Logo_128x128_15
+  - first:
+      213: 4682844987217328481
+    second: Koridor Logo_128x128_16
+  - first:
+      213: -5203077811868835977
+    second: Koridor Logo_128x128_17
+  - first:
+      213: 6567610466408391592
+    second: Koridor Logo_128x128_18
+  - first:
+      213: -8205273885962921702
+    second: Koridor Logo_128x128_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Koridor Logo_128x128_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 51
+        width: 28
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4214ab68ec7248430800000000000000
+      internalID: 3784193354875158820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koridor Logo_128x128_1
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 50
+        width: 27
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a782a5f93a277140800000000000000
+      internalID: 4717285563116455847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koridor Logo_128x128_2
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 51
+        width: 25
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb471691b8610f2b0800000000000000
+      internalID: -5552913553865739074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koridor Logo_128x128_3
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 51
+        width: 9
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54a2308f007e5a040800000000000000
+      internalID: 4658383380931619397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koridor Logo_128x128_4
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 51
+        width: 24
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e77073ab409527e40800000000000000
+      internalID: 5652678359142303614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koridor Logo_128x128_5
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 50
+        width: 28
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96f29151113538730800000000000000
+      internalID: 4000132226868653929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koridor Logo_128x128_6
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 51
+        width: 25
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9002cf717215bf9c0800000000000000
+      internalID: -3892428224583688183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koridor Logo_128x128_7
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 25
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d0426f09388eb270800000000000000
+      internalID: 8268195744551420116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koridor Logo_128x128_8
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 25
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6248347a1263a9b0800000000000000
+      internalID: -5070100889730530707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koridor Logo_128x128_9
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 25
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a89ba8b51e05e9250800000000000000
+      internalID: 5953284686264056202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koridor Logo_128x128_10
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 25
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fd203a287ec15bf0800000000000000
+      internalID: -337261481576878603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koridor Logo_128x128_11
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 25
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89a4fa9dd8dcfef30800000000000000
+      internalID: 4607126952949533336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koridor Logo_128x128_12
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 25
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 265ea1793edf133d0800000000000000
+      internalID: -3228520303913409182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koridor Logo_128x128_13
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 25
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9825e662e1660bcf0800000000000000
+      internalID: -238578500570819959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koridor Logo_128x128_14
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 25
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 315b636d4720947c0800000000000000
+      internalID: -4086732486028643053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koridor Logo_128x128_15
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 25
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5e7414ff7e557240800000000000000
+      internalID: 4788837682427231834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koridor Logo_128x128_16
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 25
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 169be4184beccf040800000000000000
+      internalID: 4682844987217328481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koridor Logo_128x128_17
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 25
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77f57d41c44fac7b0800000000000000
+      internalID: -5203077811868835977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koridor Logo_128x128_18
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 25
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a3e8692ce6d42b50800000000000000
+      internalID: 6567610466408391592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Koridor Logo_128x128_19
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 25
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a191466cfd2012e80800000000000000
+      internalID: -8205273885962921702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Koridor Logo_128x128_0: 3784193354875158820
+      Koridor Logo_128x128_1: 4717285563116455847
+      Koridor Logo_128x128_10: -337261481576878603
+      Koridor Logo_128x128_11: 4607126952949533336
+      Koridor Logo_128x128_12: -3228520303913409182
+      Koridor Logo_128x128_13: -238578500570819959
+      Koridor Logo_128x128_14: -4086732486028643053
+      Koridor Logo_128x128_15: 4788837682427231834
+      Koridor Logo_128x128_16: 4682844987217328481
+      Koridor Logo_128x128_17: -5203077811868835977
+      Koridor Logo_128x128_18: 6567610466408391592
+      Koridor Logo_128x128_19: -8205273885962921702
+      Koridor Logo_128x128_2: -5552913553865739074
+      Koridor Logo_128x128_3: 4658383380931619397
+      Koridor Logo_128x128_4: 5652678359142303614
+      Koridor Logo_128x128_5: 4000132226868653929
+      Koridor Logo_128x128_6: -3892428224583688183
+      Koridor Logo_128x128_7: 8268195744551420116
+      Koridor Logo_128x128_8: -5070100889730530707
+      Koridor Logo_128x128_9: 5953284686264056202
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
