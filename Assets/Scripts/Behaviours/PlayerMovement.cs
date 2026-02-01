@@ -4,6 +4,8 @@ using UnityEngine;
 [DisallowMultipleComponent]
 public class PlayerMovement : MonoBehaviour
 {
+    [SerializeField] private HintManager _hintManager;
+
     [SerializeField] private float _moveSpeed = 5f;
     public float MovementSpeed => _moveSpeed * Multiplier;
     
@@ -87,7 +89,7 @@ public class PlayerMovement : MonoBehaviour
             StopHiding();
             return;
         }
-        // Check if enough time has passed since last jump
+
         if (Time.time - _lastJumpTime >= _jumpCooldown && !PreventToJump)
         {
             _lastJumpTime = Time.time;
@@ -145,8 +147,6 @@ public class PlayerMovement : MonoBehaviour
             {
                 _animator.SetBool(ConstantHelper.Combat.ANIMATOR_PARAM_HIDE, false);
             }
-
-            Debug.Log("Player stopped hiding!");
         }
     }
 
@@ -177,10 +177,13 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag(ConstantHelper.Tags.PORTAL))
         {
+            var floor = collision.gameObject.GetComponent<FloorManager>();
+            if (floor.IsExit) _hintManager.ShowHint("Double tap S or Down Arrow to Next Floor");
             PerformToTeleport = true;
         } else
         if (collision.gameObject.CompareTag(ConstantHelper.Tags.HIDABLE))
         {
+            _hintManager.ShowHint("Double tap S or Down Arrow to Hide");
             PreventToJump = true;
             PerformToHiding = true;
         } else
@@ -196,11 +199,13 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag(ConstantHelper.Tags.HIDABLE))
         {
+            _hintManager.HideHint();
             PreventToJump = false;
             PerformToHiding = false;
         } else
         if (collision.gameObject.CompareTag(ConstantHelper.Tags.PORTAL))
         {
+            _hintManager.HideHint();
             PerformToTeleport = false;
         }
     }

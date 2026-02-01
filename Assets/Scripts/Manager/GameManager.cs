@@ -65,11 +65,13 @@ public class GameManager : MonoBehaviour
         if (_coinManager != null && _scoreManager != null)
         {
             _coinManager.OnCoinUpdated += _scoreManager.UpdateScore;
+            Debug.Log("_scoreManager.UpdateScore registered!");
         }
 
         if (_levelManager != null && _scoreManager != null)
         {
             _levelManager.OnLevelChanged += _scoreManager.UpdateLevel;
+            Debug.Log("_scoreManager.UpdateLevel registered!");
         }
 
         if (_scoreManager != null)

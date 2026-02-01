@@ -45,6 +45,7 @@ public class LevelManager : MonoBehaviour
             var arena = Instantiate(stage);
             var playerSpawn = arena.transform.Find("PlayerSpawnPoint");
             _player.transform.position = playerSpawn.position;
+            arena.GetComponent<FloorManager>()?.SetDoorAsExit(Level >= MaxLevel);
             Debug.Log("LevelManager.LoadLevelStage");
         }
         else

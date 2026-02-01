@@ -63,5 +63,8 @@ TagManager:
   - name: Player
     uniqueID: 410996119
     locked: 0
+  - name: Hint
+    uniqueID: 3462767219
+    locked: 0
   m_RenderingLayers:
   - Default

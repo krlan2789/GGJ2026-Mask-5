@@ -55,6 +55,7 @@ public class ScoreManager : MonoBehaviour
     {
         _scoreTxt.text = score.ToString();
         if (_scoreResultTxt != null) _scoreResultTxt.text = score.ToString();
+        Debug.Log("_scoreManager.UpdateScore: " + score);
     }
 
     public void HideScore()
