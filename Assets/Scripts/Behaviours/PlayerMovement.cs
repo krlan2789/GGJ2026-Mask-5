@@ -41,9 +41,8 @@ public class PlayerMovement : MonoBehaviour
     private void OnValidate()
     {
         if (_boundaryManager == null) _boundaryManager = FindFirstObjectByType<BoundaryManager>();
-
-        if (_boundaryManager == null)
-            Debug.LogError("BoundaryManager not found in scene!");
+        //if (_boundaryManager == null)
+        //    Debug.LogError("BoundaryManager not found in scene!");
     }
 
     private void Start()

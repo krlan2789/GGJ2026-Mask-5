@@ -178,10 +178,10 @@ TextureImporter:
       name: Agate Academy (Color)_128x128_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 63
-        width: 26
-        height: 28
+        x: 6
+        y: 30
+        width: 116
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,275 +196,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Agate Academy (Color)_128x128_1
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 55
-        width: 24
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b56f7deed57f097e0800000000000000
-      internalID: -1760635471490714021
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agate Academy (Color)_128x128_2
-      rect:
-        serializedVersion: 2
-        x: 57
-        y: 63
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b4b60354718a6f9e0800000000000000
-      internalID: -1587897000703005877
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agate Academy (Color)_128x128_3
-      rect:
-        serializedVersion: 2
-        x: 82
-        y: 63
-        width: 14
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 665c8ac8772baf390800000000000000
-      internalID: -7783712779425757850
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agate Academy (Color)_128x128_4
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 63
-        width: 23
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5446808b626d33850800000000000000
-      internalID: 6355658960934560837
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agate Academy (Color)_128x128_5
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 37
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bb49d0ce1feee3dc0800000000000000
-      internalID: -3657223124563422021
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agate Academy (Color)_128x128_6
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 36
-        width: 10
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3cf574cd5c9c6d000800000000000000
-      internalID: 60457496657485763
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agate Academy (Color)_128x128_7
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 37
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d15ec114c4a89bb30800000000000000
-      internalID: 4303622979043779869
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agate Academy (Color)_128x128_8
-      rect:
-        serializedVersion: 2
-        x: 45
-        y: 37
-        width: 9
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bd9bbb2b19ab68bd0800000000000000
-      internalID: -2628208197592434213
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agate Academy (Color)_128x128_9
-      rect:
-        serializedVersion: 2
-        x: 57
-        y: 37
-        width: 7
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: aff9d67bdd42a9920800000000000000
-      internalID: 2997749036652273658
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agate Academy (Color)_128x128_10
-      rect:
-        serializedVersion: 2
-        x: 67
-        y: 37
-        width: 11
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ffcbb94f727e5de30800000000000000
-      internalID: 4527779159184489727
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agate Academy (Color)_128x128_11
-      rect:
-        serializedVersion: 2
-        x: 81
-        y: 37
-        width: 9
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0f3f8a6294db41e60800000000000000
-      internalID: 7932172965585155056
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agate Academy (Color)_128x128_12
-      rect:
-        serializedVersion: 2
-        x: 92
-        y: 33
-        width: 28
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 567a99225377714f0800000000000000
-      internalID: -858086133893322907
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -479,6 +215,7 @@ TextureImporter:
       Agate Academy (Color)_128x128_10: 4527779159184489727
       Agate Academy (Color)_128x128_11: 7932172965585155056
       Agate Academy (Color)_128x128_12: -858086133893322907
+      Agate Academy (Color)_128x128_13: 796831288
       Agate Academy (Color)_128x128_2: -1587897000703005877
       Agate Academy (Color)_128x128_3: -7783712779425757850
       Agate Academy (Color)_128x128_4: 6355658960934560837

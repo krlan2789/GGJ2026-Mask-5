@@ -389,7 +389,8 @@ MonoBehaviour:
   _canvasGroups:
   - {fileID: 338292182}
   _timing: 1.5
-  _delayShow: 0.5
+  _delay: 1
+  _delayBetween: 0.5
   autoStart: 1
   OnComplete:
     m_PersistentCalls:
@@ -1121,7 +1122,8 @@ MonoBehaviour:
   _canvasGroups:
   - {fileID: 1721203279}
   _timing: 1.5
-  _delayShow: 0.5
+  _delay: 1
+  _delayBetween: 0.5
   autoStart: 1
   OnComplete:
     m_PersistentCalls:
@@ -1230,7 +1232,8 @@ MonoBehaviour:
   _canvasGroups:
   - {fileID: 1938696190}
   _timing: 1.5
-  _delayShow: 0.5
+  _delay: 1
+  _delayBetween: 0.5
   autoStart: 1
   OnComplete:
     m_PersistentCalls:
