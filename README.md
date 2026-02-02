@@ -22,8 +22,8 @@ They must escape the museum with the artifacts without being detected by the gua
 
 ### Special Actions
 
-- W or Up Arrow → Jump, or Unhide when inside certain objects
-- S or Down Arrow → Hide inside certain objects, or proceed to the next level
+- W or Up Arrow → Jump, or Unhide when on certain objects
+- S or Down Arrow → Hide on certain objects, or proceed to the next level
 
 ## Members
 
