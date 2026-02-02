@@ -37,6 +37,6 @@ They must escape the museum with the artifacts without being detected by the gua
 
 ## Tools
 
-- Unity 6
 - Clip Studio Paint
 - Figma
+- Unity 6
