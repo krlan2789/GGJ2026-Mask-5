@@ -1,11 +1,13 @@
 # GGJ2026-Mask-5
 
-|       |                      |
-| ----- | -------------------- |
-| Title | Reclaim              |
-| Event | Global Game Jam 2026 |
-| Theme | Mask                 |
-| Team  | 5                    |
+|          |                            |
+| -------- | -------------------------- |
+| Title    | Reclaim                    |
+| Event    | Global Game Jam 2026       |
+| Theme    | Mask                       |
+| Team     | 5                          |
+| Platform | Windows                    |
+| Genre    | 2D, Side-Scrolling, Escape |
 
 ## About The Game
 
