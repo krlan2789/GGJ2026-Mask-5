@@ -32,7 +32,6 @@ public class GameManager : MonoBehaviour
         _playerMovement = FindFirstObjectByType<PlayerMovement>();
         _scoreManager = FindFirstObjectByType<ScoreManager>();
         _coinManager = FindFirstObjectByType<CoinManager>();
-        _levelManager = FindFirstObjectByType<LevelManager>();
 
         if (_gameController == null)
             Debug.LogError("GameController not found in scene!");
@@ -46,9 +45,20 @@ public class GameManager : MonoBehaviour
             Debug.LogError("CoinManager not found in scene!");
     }
 
+    private void Awake()
+    {
+        _levelManager = FindFirstObjectByType<LevelManager>();
+    }
+
     private void Start()
     {
+
+        Debug.Log("GameManager -> LoadLevelStage");
+        _levelManager.LevelUp();
+        _levelManager.LoadLevelStage();
+
         OnValidate();
+
         if (_gameController != null && _playerMovement != null)
         {
             _gameController.OnMove += _playerMovement.Move;
@@ -78,10 +88,6 @@ public class GameManager : MonoBehaviour
         {
             _scoreManager.OnGameStarted += ResetGame;
         }
-
-        Debug.Log("GameManager -> LoadLevelStage");
-        _levelManager.LevelUp();
-        _levelManager.LoadLevelStage();
     }
 
     private void OnDestroy()
@@ -118,7 +124,6 @@ public class GameManager : MonoBehaviour
     {
         if (_levelManager.Level < _levelManager.MaxLevel)
         {
-            //_levelManager.LevelUp();
             SceneLoader.LoadSceneStatic(SceneLoader.SceneEnum.Gameplay);
         }
 

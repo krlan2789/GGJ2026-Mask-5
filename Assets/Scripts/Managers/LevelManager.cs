@@ -4,7 +4,7 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour
 {
     [SerializeField] private GameObject _player;
-    [SerializeField] private SoStageList _stageList;
+    [SerializeField] private StageList _stageList;
 
     [SerializeField] private byte _maxLevel = 5;
     public byte MaxLevel => _maxLevel;
@@ -30,7 +30,7 @@ public class LevelManager : MonoBehaviour
     private void Start()
     {
         Level = 0;
-        _maxLevel = (byte)_stageList.StageList.Count;
+        _maxLevel = (byte)_stageList.List.Count;
     }
 
     public void LoadLevelStage()

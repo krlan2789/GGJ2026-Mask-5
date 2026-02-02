@@ -2,11 +2,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Stage List", menuName = "Scriptable Objects/Stage List")]
-public class SoStageList : ScriptableObject
+public class StageList : ScriptableObject
 {
     [SerializeField] private List<GameObject> _stages = new();
 
-    public List<GameObject> StageList => _stages;
+    public List<GameObject> List => _stages;
 
     public GameObject GetStage(int level)
     {
