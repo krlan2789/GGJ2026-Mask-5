@@ -193,7 +193,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 540147676172336968, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 680
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 540147676172336968, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
       propertyPath: m_SizeDelta.y
@@ -253,7 +253,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2991032908104447436, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
       propertyPath: m_Text
-      value: Liana Atmaja
+      value: "Liana Atmaja \u21D7"
       objectReference: {fileID: 0}
     - target: {fileID: 3491705733877990506, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
       propertyPath: m_AnchorMax.y
@@ -286,13 +286,93 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7778294893716374511, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 508547053183485677}
+    - targetCorrespondingSourceObject: {fileID: 7778294893716374511, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2442846340251627974}
   m_SourcePrefab: {fileID: 100100000, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
+--- !u!114 &650968862993212597 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2991032908104447436, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
+  m_PrefabInstance: {fileID: 2344963832404595065}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5438362429256782486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &2878927562570755633 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 540147676172336968, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
   m_PrefabInstance: {fileID: 2344963832404595065}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5438362429256782486 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7778294893716374511, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
+  m_PrefabInstance: {fileID: 2344963832404595065}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &508547053183485677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5438362429256782486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 650968862993212597}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2442846340251627974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5438362429256782486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cc7d0cf0d711f94c90414b7ecc95743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _button: {fileID: 0}
+  _url: https://globalgamejam.org/users/citrusify
 --- !u!1001 &2463815435481345296
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -351,7 +431,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 540147676172336968, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 680
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 540147676172336968, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
       propertyPath: m_SizeDelta.y
@@ -411,7 +491,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2991032908104447436, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
       propertyPath: m_Text
-      value: Niko Bagus
+      value: "Niko Bagus \u21D7"
       objectReference: {fileID: 0}
     - target: {fileID: 3491705733877990506, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
       propertyPath: m_AnchorMax.y
@@ -444,13 +524,93 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7778294893716374511, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1049898291056899309}
+    - targetCorrespondingSourceObject: {fileID: 7778294893716374511, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4746934535118882099}
   m_SourcePrefab: {fileID: 100100000, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
+--- !u!114 &843144551004428508 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2991032908104447436, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
+  m_PrefabInstance: {fileID: 2463815435481345296}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5315152368404164351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &2688585646963708504 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 540147676172336968, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
   m_PrefabInstance: {fileID: 2463815435481345296}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5315152368404164351 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7778294893716374511, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
+  m_PrefabInstance: {fileID: 2463815435481345296}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1049898291056899309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5315152368404164351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 843144551004428508}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &4746934535118882099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5315152368404164351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cc7d0cf0d711f94c90414b7ecc95743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _button: {fileID: 0}
+  _url: https://globalgamejam.org/users/sergeynikolaus
 --- !u!1001 &5177191499611223865
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -509,7 +669,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 540147676172336968, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 680
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 540147676172336968, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
       propertyPath: m_SizeDelta.y
@@ -569,7 +729,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2991032908104447436, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
       propertyPath: m_Text
-      value: Chelsea Oktaviano
+      value: "Chelsea Oktaviano \u21D7"
       objectReference: {fileID: 0}
     - target: {fileID: 3491705733877990506, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
       propertyPath: m_AnchorMax.y
@@ -602,13 +762,93 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7778294893716374511, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4426207360885661064}
+    - targetCorrespondingSourceObject: {fileID: 7778294893716374511, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6981376409218160990}
   m_SourcePrefab: {fileID: 100100000, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
+--- !u!1 &3182665889364096214 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7778294893716374511, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
+  m_PrefabInstance: {fileID: 5177191499611223865}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4426207360885661064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3182665889364096214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 7952051443734545141}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &6981376409218160990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3182665889364096214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cc7d0cf0d711f94c90414b7ecc95743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _button: {fileID: 0}
+  _url: https://globalgamejam.org/users/rovalian
 --- !u!224 &4658948861576775793 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 540147676172336968, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
   m_PrefabInstance: {fileID: 5177191499611223865}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7952051443734545141 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2991032908104447436, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
+  m_PrefabInstance: {fileID: 5177191499611223865}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3182665889364096214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5948016414791799632
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -667,7 +907,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 540147676172336968, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 680
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 540147676172336968, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
       propertyPath: m_SizeDelta.y
@@ -725,6 +965,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ERLAN_KURNIA
       objectReference: {fileID: 0}
+    - target: {fileID: 2991032908104447436, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
+      propertyPath: m_Text
+      value: "Erlan Kurnia \u21D7"
+      objectReference: {fileID: 0}
     - target: {fileID: 3491705733877990506, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -752,13 +996,93 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7778294893716374511, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4049246828193354395}
+    - targetCorrespondingSourceObject: {fileID: 7778294893716374511, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8957739031300731385}
   m_SourcePrefab: {fileID: 100100000, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
+--- !u!1 &4141504699812057279 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7778294893716374511, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
+  m_PrefabInstance: {fileID: 5948016414791799632}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4049246828193354395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4141504699812057279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 8865848236729575068}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &8957739031300731385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4141504699812057279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cc7d0cf0d711f94c90414b7ecc95743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _button: {fileID: 0}
+  _url: https://globalgamejam.org/users/krlan2789
 --- !u!224 &6193966922352733208 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 540147676172336968, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
   m_PrefabInstance: {fileID: 5948016414791799632}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8865848236729575068 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2991032908104447436, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
+  m_PrefabInstance: {fileID: 5948016414791799632}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4141504699812057279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6547993943975282282
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -817,7 +1141,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 540147676172336968, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 680
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 540147676172336968, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
       propertyPath: m_SizeDelta.y
@@ -877,7 +1201,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2991032908104447436, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
       propertyPath: m_Text
-      value: Surayya Aliya
+      value: "Surayya Aliya \u21D7"
       objectReference: {fileID: 0}
     - target: {fileID: 3491705733877990506, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
       propertyPath: m_AnchorMax.y
@@ -910,10 +1234,90 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7778294893716374511, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1298954600607238480}
+    - targetCorrespondingSourceObject: {fileID: 7778294893716374511, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2695237338852031743}
   m_SourcePrefab: {fileID: 100100000, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
+--- !u!1 &3543532678034572677 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7778294893716374511, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
+  m_PrefabInstance: {fileID: 6547993943975282282}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1298954600607238480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3543532678034572677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 8312920719186981798}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2695237338852031743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3543532678034572677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cc7d0cf0d711f94c90414b7ecc95743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _button: {fileID: 0}
+  _url: https://globalgamejam.org/users/surayya-aliya
 --- !u!224 &6746912033818507554 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 540147676172336968, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
   m_PrefabInstance: {fileID: 6547993943975282282}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8312920719186981798 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2991032908104447436, guid: d09be26a789e99241b99d370b5a737c8, type: 3}
+  m_PrefabInstance: {fileID: 6547993943975282282}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3543532678034572677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
