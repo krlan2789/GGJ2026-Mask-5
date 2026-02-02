@@ -1,5 +1,42 @@
 # GGJ2026-Mask-5
 
-Unity Project - Global Game Jam 2026 - Mask 5
+|       |                      |
+| ----- | -------------------- |
+| Title | Reclaim              |
+| Event | Global Game Jam 2026 |
+| Theme | Mask                 |
+| Team  | 5                    |
 
-- Sponsor, Media Partner, Organizer logo [here](https://drive.google.com/drive/folders/12Qnlw1fQaINOOZ3xxWrnOC3T53lkoj8c).
+## About The Game
+
+Retrieve artifacts to their original location to preserve the nation's heritage. Set in a museum, players explore the museum to retrieve scattered artifacts.
+They must escape the museum with the artifacts without being detected by the guards. Players can hide to avoid the guards' surveillance to reach the game's conclusion.
+
+## Game Controls
+
+### Movement
+
+- A or Left Arrow → Move Left
+- D or Right Arrow → Move Right
+- Shift + Move → Run
+
+### Special Actions
+
+- W or Up Arrow → Jump, or Unhide when inside certain objects
+- S or Down Arrow → Hide inside certain objects, or proceed to the next level
+
+## Members
+
+| Name              | Role           |
+| ----------------- | -------------- |
+| Chelsea Oktaviano | UI/UX Designer |
+| Erlan Kurnia      | Programmer     |
+| Liana Atmaja      | 2D Artist      |
+| Niko Bagus        | Game Designer  |
+| Surayya Aliya     | 2D Artist      |
+
+## Tools
+
+- Unity 6
+- Clip Studio Paint
+- Figma
