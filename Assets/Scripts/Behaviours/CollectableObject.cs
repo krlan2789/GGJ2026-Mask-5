@@ -1,31 +1,36 @@
+using GGJ_2026_Mask_5.Managers;
+using GGJ_2026_Mask_5.Values;
 using System.Collections;
 using UnityEngine;
 
-[DisallowMultipleComponent]
-public class CollectableObject : MonoBehaviour
+namespace GGJ_2026_Mask_5.Behaviours
 {
-    //[SerializeField] private GameObject _obj;
-    private CoinManager _coinManager;
-    private bool _collected = false;
-
-    private void Awake()
+    [DisallowMultipleComponent]
+    public class CollectableObject : MonoBehaviour
     {
-        _coinManager = FindFirstObjectByType<CoinManager>();
-    }
+        //[SerializeField] private GameObject _obj;
+        private CoinManager _coinManager;
+        private bool _collected = false;
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag(ConstantHelper.Tags.PLAYER) && !_collected)
+        private void Awake()
         {
-            StartCoroutine(Collected());
+            _coinManager = FindFirstObjectByType<CoinManager>();
         }
-    }
 
-    private IEnumerator Collected()
-    {
-        _collected = true;
-        _coinManager.IncreaseCoin();
-        yield return new WaitForEndOfFrame();
-        Destroy(gameObject);
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            if (collision.gameObject.CompareTag(ConstantHelper.Tags.PLAYER) && !_collected)
+            {
+                StartCoroutine(Collected());
+            }
+        }
+
+        private IEnumerator Collected()
+        {
+            _collected = true;
+            _coinManager.IncreaseCoin();
+            yield return new WaitForEndOfFrame();
+            Destroy(gameObject);
+        }
     }
 }

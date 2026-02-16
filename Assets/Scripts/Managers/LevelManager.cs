@@ -1,79 +1,84 @@
+using GGJ_2026_Mask_5.Values;
 using System;
 using UnityEngine;
 
-public class LevelManager : MonoBehaviour
+namespace GGJ_2026_Mask_5.Managers
 {
-    [SerializeField] private GameObject _player;
-    [SerializeField] private StageList _stageList;
-
-    [SerializeField] private byte _maxLevel = 5;
-    public byte MaxLevel => _maxLevel;
-
-
-    private byte _level = 1;
-    public byte Level
+    [DisallowMultipleComponent]
+    public class LevelManager : MonoBehaviour
     {
-        get
-        {
-            _level = (byte)PlayerPrefs.GetInt("level", _level);
-            return _level;
-        }
-        private set
-        {
-            _level = value;
-            PlayerPrefs.SetInt("level", _level);
-        }
-    }
+        [SerializeField] private GameObject _player;
+        [SerializeField] private StageList _stageList;
 
-    public event Action<byte> OnLevelChanged;
+        [SerializeField] private byte _maxLevel = 5;
+        public byte MaxLevel => _maxLevel;
 
-    private void Start()
-    {
-        Level = 0;
-        _maxLevel = (byte)_stageList.List.Count;
-    }
 
-    public void LoadLevelStage()
-    {
-        var stage = _stageList.GetStage(Level);
-        if (stage != null)
+        private byte _level = 1;
+        public byte Level
         {
-            foreach (var oldStage in GameObject.FindGameObjectsWithTag(ConstantHelper.Tags.STAGE))
+            get
             {
-                Destroy(oldStage);
+                _level = (byte)PlayerPrefs.GetInt("level", _level);
+                return _level;
             }
-            var arena = Instantiate(stage);
-            var playerSpawn = arena.transform.Find("PlayerSpawnPoint");
-            _player.transform.position = playerSpawn.position;
-            arena.GetComponent<FloorManager>()?.SetDoorAsExit(Level >= MaxLevel);
-            Debug.Log("LevelManager.LoadLevelStage");
+            private set
+            {
+                _level = value;
+                PlayerPrefs.SetInt("level", _level);
+            }
         }
-        else
+
+        public event Action<byte> OnLevelChanged;
+
+        private void Start()
         {
-            Debug.LogWarning($"Stage for level {Level} not found in StageList.");
+            Level = 0;
+            _maxLevel = (byte)_stageList.List.Count;
         }
-    }
 
-    public void LevelUp()
-    {
-        Level++;
-        if (Level > _maxLevel) Level = MaxLevel;
-        OnLevelChanged?.Invoke(Level);
-        FindFirstObjectByType<ScoreManager>().UpdateLevel(Level);
-    }
+        public void LoadLevelStage()
+        {
+            var stage = _stageList.GetStage(Level);
+            if (stage != null)
+            {
+                foreach (var oldStage in GameObject.FindGameObjectsWithTag(ConstantHelper.Tags.STAGE))
+                {
+                    Destroy(oldStage);
+                }
+                var arena = Instantiate(stage);
+                var playerSpawn = arena.transform.Find("PlayerSpawnPoint");
+                _player.transform.position = playerSpawn.position;
+                arena.GetComponent<FloorManager>()?.SetDoorAsExit(Level >= MaxLevel);
+                Debug.Log("LevelManager.LoadLevelStage");
+            }
+            else
+            {
+                Debug.LogWarning($"Stage for level {Level} not found in StageList.");
+            }
+        }
 
-    public void LevelDown()
-    {
-        Level--;
-        if (Level < 1) Level = 1;
-        OnLevelChanged?.Invoke(Level);
-        FindFirstObjectByType<ScoreManager>().UpdateLevel(Level);
-    }
+        public void LevelUp()
+        {
+            Level++;
+            if (Level > _maxLevel) Level = MaxLevel;
+            OnLevelChanged?.Invoke(Level);
+            FindFirstObjectByType<ScoreManager>().UpdateLevel(Level);
+        }
 
-    public void ResetLevel()
-    {
-        Level = 1;
-        OnLevelChanged?.Invoke(Level);
-        FindFirstObjectByType<ScoreManager>().UpdateLevel(Level);
+        public void LevelDown()
+        {
+            Level--;
+            if (Level < 1) Level = 1;
+            OnLevelChanged?.Invoke(Level);
+            FindFirstObjectByType<ScoreManager>().UpdateLevel(Level);
+        }
+
+        public void ResetLevel()
+        {
+            Level = 1;
+            OnLevelChanged?.Invoke(Level);
+            FindFirstObjectByType<ScoreManager>().UpdateLevel(Level);
+        }
     }
 }

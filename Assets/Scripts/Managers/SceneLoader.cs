@@ -1,46 +1,49 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-[DisallowMultipleComponent]
-public class SceneLoader : MonoBehaviour
+namespace GGJ_2026_Mask_5.Managers
 {
-    public enum SceneEnum
+    [DisallowMultipleComponent]
+    public class SceneLoader : MonoBehaviour
     {
-        Menu,
-        Gameplay,
-        GameOver,
-        Credit,
-        Exit
-    }
-
-    [SerializeField] private Button button;
-    [SerializeField] private SceneEnum scene;
-
-    private void OnValidate()
-    {
-        if (button == null)
+        public enum SceneEnum
         {
-            button = GetComponent<Button>();
+            Menu,
+            Gameplay,
+            GameOver,
+            Credit,
+            Exit
         }
-    }
 
-    private void Start()
-    {
-        if (button != null) button.onClick.AddListener(() => LoadScene(scene));
-    }
+        [SerializeField] private Button button;
+        [SerializeField] private SceneEnum scene;
 
-    public void LoadScene(SceneEnum scene)
-    {
-        LoadSceneStatic(scene);
-    }
-
-    public static void LoadSceneStatic(SceneEnum scene)
-    {
-        if (scene == SceneEnum.Exit)
+        private void OnValidate()
         {
-            Application.Quit();
-            return;
+            if (button == null)
+            {
+                button = GetComponent<Button>();
+            }
         }
-        UnityEngine.SceneManagement.SceneManager.LoadScene(scene.ToString(), UnityEngine.SceneManagement.LoadSceneMode.Single);
+
+        private void Start()
+        {
+            if (button != null) button.onClick.AddListener(() => LoadScene(scene));
+        }
+
+        public void LoadScene(SceneEnum scene)
+        {
+            LoadSceneStatic(scene);
+        }
+
+        public static void LoadSceneStatic(SceneEnum scene)
+        {
+            if (scene == SceneEnum.Exit)
+            {
+                Application.Quit();
+                return;
+            }
+            UnityEngine.SceneManagement.SceneManager.LoadScene(scene.ToString(), UnityEngine.SceneManagement.LoadSceneMode.Single);
+        }
     }
 }

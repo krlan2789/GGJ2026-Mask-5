@@ -46,7 +46,6 @@ GameObject:
   - component: {fileID: 5600375840538214503}
   - component: {fileID: 8567378276406650461}
   - component: {fileID: 895582429569523819}
-  - component: {fileID: 6351093339745826793}
   m_Layer: 0
   m_Name: Char
   m_TagString: Player
@@ -231,29 +230,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5665f52068185fb4fa81a1dc3f4fc4bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _hintManager: {fileID: 0}
   _moveSpeed: 3
   _multiplier: 2
   _jumpForce: 9
   _jumpCooldown: 1
---- !u!114 &6351093339745826793
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8159416309311153612}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3ccd4cb464a5bd4db1063f5de5a923c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _maxHealth: 3
-  _destroyOnDeath: 0
-  _invulnerabilityTime: 0.5
-  _animator: {fileID: 8567378276406650461}
-  _onDamaged:
-    m_PersistentCalls:
-      m_Calls: []
-  _onDied:
-    m_PersistentCalls:
-      m_Calls: []

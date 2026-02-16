@@ -1,22 +1,26 @@
 using UnityEngine;
 
-public class FloorManager : MonoBehaviour
+namespace GGJ_2026_Mask_5.Managers
 {
-    [SerializeField] private GameObject doorEnter;
-    [SerializeField] private GameObject doorExit;
-
-    public bool IsExit { private set; get; } = false;
-
-    public void SetDoorAsExit(bool isExit)
+    [DisallowMultipleComponent]
+    public class FloorManager : MonoBehaviour
     {
-        IsExit = isExit;
-        if (doorEnter != null)
+        [SerializeField] private GameObject doorEnter;
+        [SerializeField] private GameObject doorExit;
+
+        public bool IsExit { private set; get; } = false;
+
+        public void SetDoorAsExit(bool isExit)
         {
-            doorEnter.SetActive(!isExit);
-        }
-        if (doorExit != null)
-        {
-            doorExit.SetActive(isExit);
+            IsExit = isExit;
+            if (doorEnter != null)
+            {
+                doorEnter.SetActive(!isExit);
+            }
+            if (doorExit != null)
+            {
+                doorExit.SetActive(isExit);
+            }
         }
     }
 }

@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace GGJ_2026_Mask_5
+namespace GGJ_2026_Mask_5.Utils
 {
     public class OpenUrl : MonoBehaviour
     {

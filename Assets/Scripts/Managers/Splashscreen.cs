@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace GGJ_2026_Mask_5
+namespace GGJ_2026_Mask_5.Managers
 {
     public class Splashscreen : MonoBehaviour
     {

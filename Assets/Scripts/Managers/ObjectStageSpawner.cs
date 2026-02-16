@@ -1,23 +1,27 @@
 using UnityEngine;
 
-public class ObjectStageSpawner : MonoBehaviour
+namespace GGJ_2026_Mask_5.Managers
 {
-    [SerializeField] private GameObject[] _prefabs;
-    [SerializeField] private Transform[] _targets;
-
-    private void Start()
+    [DisallowMultipleComponent]
+    public class ObjectStageSpawner : MonoBehaviour
     {
-        foreach (var target in _targets)
+        [SerializeField] private GameObject[] _prefabs;
+        [SerializeField] private Transform[] _targets;
+
+        private void Start()
         {
-            CreateObject(target);
+            foreach (var target in _targets)
+            {
+                CreateObject(target);
+            }
         }
-    }
 
-    private void CreateObject(Transform target)
-    {
-        if (_prefabs.Length == 0) return;
-        int index = Random.Range(0, _prefabs.Length);
-        GameObject prefab = _prefabs[index];
-        Instantiate(prefab, target.position, Quaternion.identity, target);
+        private void CreateObject(Transform target)
+        {
+            if (_prefabs.Length == 0) return;
+            int index = Random.Range(0, _prefabs.Length);
+            GameObject prefab = _prefabs[index];
+            Instantiate(prefab, target.position, Quaternion.identity, target);
+        }
     }
 }

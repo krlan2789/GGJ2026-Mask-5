@@ -1,36 +1,41 @@
+using GGJ_2026_Mask_5.Values;
 using UnityEngine;
 
-public class Hidable : MonoBehaviour
+namespace GGJ_2026_Mask_5.Behaviours
 {
-    private SpriteRenderer _spriteRenderer;
-    [SerializeField] private Sprite _openSprite;
-    [SerializeField] private Sprite _closeSprite;
-
-    private void Awake()
+    [DisallowMultipleComponent]
+    public class Hidable : MonoBehaviour
     {
-        _spriteRenderer = GetComponent<SpriteRenderer>();
-        if (_openSprite != null) _spriteRenderer.sprite = _openSprite;
-    }
+        private SpriteRenderer _spriteRenderer;
+        [SerializeField] private Sprite _openSprite;
+        [SerializeField] private Sprite _closeSprite;
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag(ConstantHelper.Tags.PLAYER))
+        private void Awake()
         {
-            //collision.gameObject.GetComponent<PlayerMovement>().PerformToHiding = true;
-            if (_spriteRenderer != null && _closeSprite != null)
+            _spriteRenderer = GetComponent<SpriteRenderer>();
+            if (_openSprite != null) _spriteRenderer.sprite = _openSprite;
+        }
+
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            if (collision.gameObject.CompareTag(ConstantHelper.Tags.PLAYER))
             {
-                _spriteRenderer.sprite = _closeSprite;
+                //collision.gameObject.GetComponent<PlayerMovement>().PerformToHiding = true;
+                if (_spriteRenderer != null && _closeSprite != null)
+                {
+                    _spriteRenderer.sprite = _closeSprite;
+                }
             }
         }
-    }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag(ConstantHelper.Tags.PLAYER))
+        private void OnTriggerExit2D(Collider2D collision)
         {
-            //collision.gameObject.GetComponent<PlayerMovement>().PerformToHiding = false;
-            if (_spriteRenderer != null && _openSprite != null)
+            if (collision.gameObject.CompareTag(ConstantHelper.Tags.PLAYER))
             {
-                _spriteRenderer.sprite = _openSprite;
+                //collision.gameObject.GetComponent<PlayerMovement>().PerformToHiding = false;
+                if (_spriteRenderer != null && _openSprite != null)
+                {
+                    _spriteRenderer.sprite = _openSprite;
+                }
             }
         }
     }

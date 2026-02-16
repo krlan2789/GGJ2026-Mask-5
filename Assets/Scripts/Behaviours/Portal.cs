@@ -1,6 +1,10 @@
 using UnityEngine;
 
-public class Portal : MonoBehaviour
+namespace GGJ_2026_Mask_5.Behaviours
 {
-    public bool isExit = false;
+    [DisallowMultipleComponent]
+    public class Portal : MonoBehaviour
+    {
+        public bool isExit = false;
+    }
 }

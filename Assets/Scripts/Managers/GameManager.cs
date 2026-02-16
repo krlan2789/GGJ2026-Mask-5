@@ -1,156 +1,160 @@
+using GGJ_2026_Mask_5.Behaviours;
 using UnityEngine;
 
-[DisallowMultipleComponent]
-public class GameManager : MonoBehaviour
+namespace GGJ_2026_Mask_5.Managers
 {
-    private static GameManager _instance;
-    public static GameManager Instance
+    [DisallowMultipleComponent]
+    public class GameManager : MonoBehaviour
     {
-        get
+        private static GameManager _instance;
+        public static GameManager Instance
         {
-            _instance = _instance != null ? _instance : FindFirstObjectByType<GameManager>();
-            return _instance;
-        }
-    }
-
-    private GameController _gameController;
-    private SfxManager _sfxManager;
-    private PlayerMovement _playerMovement;
-    private ScoreManager _scoreManager;
-    private CoinManager _coinManager;
-    private LevelManager _levelManager;
-
-    private bool _isGameOver = false;
-    public bool IsGameOver => _isGameOver;
-    public byte Level => _levelManager.Level;
-    public int Coin => _coinManager.CoinValue;
-
-    public void OnValidate()
-    {
-        _gameController = FindFirstObjectByType<GameController>();
-        _sfxManager = FindFirstObjectByType<SfxManager>();
-        _playerMovement = FindFirstObjectByType<PlayerMovement>();
-        _scoreManager = FindFirstObjectByType<ScoreManager>();
-        _coinManager = FindFirstObjectByType<CoinManager>();
-
-        if (_gameController == null)
-            Debug.LogError("GameController not found in scene!");
-        if (_sfxManager == null)
-            Debug.LogError("SfxManager not found in scene!");
-        if (_playerMovement == null)
-            Debug.LogError("PlayerMovement not found in scene!");
-        if (_scoreManager == null)
-            Debug.LogError("ScoreManager not found in scene!");
-        if (_coinManager == null)
-            Debug.LogError("CoinManager not found in scene!");
-    }
-
-    private void Awake()
-    {
-        _levelManager = FindFirstObjectByType<LevelManager>();
-    }
-
-    private void Start()
-    {
-
-        Debug.Log("GameManager -> LoadLevelStage");
-        _levelManager.LevelUp();
-        _levelManager.LoadLevelStage();
-
-        OnValidate();
-
-        if (_gameController != null && _playerMovement != null)
-        {
-            _gameController.OnMove += _playerMovement.Move;
-            _gameController.OnJump += _playerMovement.Jump;
-            _gameController.OnHide += _playerMovement.Hiding;
+            get
+            {
+                _instance = _instance != null ? _instance : FindFirstObjectByType<GameManager>();
+                return _instance;
+            }
         }
 
-        if (_gameController != null && _sfxManager != null)
+        private GameController _gameController;
+        private SfxManager _sfxManager;
+        private PlayerMovement _playerMovement;
+        private ScoreManager _scoreManager;
+        private CoinManager _coinManager;
+        private LevelManager _levelManager;
+
+        private bool _isGameOver = false;
+        public bool IsGameOver => _isGameOver;
+        public byte Level => _levelManager.Level;
+        public int Coin => _coinManager.CoinValue;
+
+        public void OnValidate()
         {
-            _gameController.OnMove += _sfxManager.PlayWalkSound;
-            _gameController.OnJump += _sfxManager.PlayJumpSound;
+            _gameController = FindFirstObjectByType<GameController>();
+            _sfxManager = FindFirstObjectByType<SfxManager>();
+            _playerMovement = FindFirstObjectByType<PlayerMovement>();
+            _scoreManager = FindFirstObjectByType<ScoreManager>();
+            _coinManager = FindFirstObjectByType<CoinManager>();
+
+            if (_gameController == null)
+                Debug.LogError("GameController not found in scene!");
+            if (_sfxManager == null)
+                Debug.LogError("SfxManager not found in scene!");
+            if (_playerMovement == null)
+                Debug.LogError("PlayerMovement not found in scene!");
+            if (_scoreManager == null)
+                Debug.LogError("ScoreManager not found in scene!");
+            if (_coinManager == null)
+                Debug.LogError("CoinManager not found in scene!");
         }
 
-        if (_coinManager != null && _scoreManager != null)
+        private void Awake()
         {
-            _coinManager.OnCoinUpdated += _scoreManager.UpdateScore;
-            Debug.Log("_scoreManager.UpdateScore registered!");
+            _levelManager = FindFirstObjectByType<LevelManager>();
         }
 
-        if (_levelManager != null && _scoreManager != null)
+        private void Start()
         {
-            _levelManager.OnLevelChanged += _scoreManager.UpdateLevel;
-            Debug.Log("_scoreManager.UpdateLevel registered!");
+
+            Debug.Log("GameManager -> LoadLevelStage");
+            _levelManager.LevelUp();
+            _levelManager.LoadLevelStage();
+
+            OnValidate();
+
+            if (_gameController != null && _playerMovement != null)
+            {
+                _gameController.OnMove += _playerMovement.Move;
+                _gameController.OnJump += _playerMovement.Jump;
+                _gameController.OnHide += _playerMovement.Hiding;
+            }
+
+            if (_gameController != null && _sfxManager != null)
+            {
+                _gameController.OnMove += _sfxManager.PlayWalkSound;
+                _gameController.OnJump += _sfxManager.PlayJumpSound;
+            }
+
+            if (_coinManager != null && _scoreManager != null)
+            {
+                _coinManager.OnCoinUpdated += _scoreManager.UpdateScore;
+                Debug.Log("_scoreManager.UpdateScore registered!");
+            }
+
+            if (_levelManager != null && _scoreManager != null)
+            {
+                _levelManager.OnLevelChanged += _scoreManager.UpdateLevel;
+                Debug.Log("_scoreManager.UpdateLevel registered!");
+            }
+
+            if (_scoreManager != null)
+            {
+                _scoreManager.OnGameStarted += ResetGame;
+            }
         }
 
-        if (_scoreManager != null)
+        private void OnDestroy()
         {
-            _scoreManager.OnGameStarted += ResetGame;
-        }
-    }
+            if (_gameController != null && _playerMovement != null)
+            {
+                _gameController.OnMove -= _playerMovement.Move;
+                _gameController.OnJump -= _playerMovement.Jump;
+            }
 
-    private void OnDestroy()
-    {
-        if (_gameController != null && _playerMovement != null)
-        {
-            _gameController.OnMove -= _playerMovement.Move;
-            _gameController.OnJump -= _playerMovement.Jump;
+            if (_gameController != null && _sfxManager != null)
+            {
+                _gameController.OnMove -= _sfxManager.PlayWalkSound;
+                _gameController.OnJump -= _sfxManager.PlayJumpSound;
+            }
+
+            if (_coinManager != null && _scoreManager != null)
+            {
+                _coinManager.OnCoinUpdated -= _scoreManager.UpdateScore;
+            }
+
+            if (_levelManager != null && _scoreManager != null)
+            {
+                _levelManager.OnLevelChanged -= _scoreManager.UpdateLevel;
+            }
+
+            if (_scoreManager != null)
+            {
+                _scoreManager.OnGameStarted -= ResetGame;
+            }
         }
 
-        if (_gameController != null && _sfxManager != null)
+        public void LevelUp()
         {
-            _gameController.OnMove -= _sfxManager.PlayWalkSound;
-            _gameController.OnJump -= _sfxManager.PlayJumpSound;
+            if (_levelManager.Level < _levelManager.MaxLevel)
+            {
+                SceneLoader.LoadSceneStatic(SceneLoader.SceneEnum.Gameplay);
+            }
+
+            if (_levelManager.Level >= _levelManager.MaxLevel)
+            {
+                _scoreManager.GameDone();
+            }
         }
 
-        if (_coinManager != null && _scoreManager != null)
+        //public void LevelDown()
+        //{
+        //    if (_levelManager.Level > 1) _levelManager.LevelDown();
+        //    SceneLoader.LoadSceneStatic(SceneLoader.SceneEnum.Gameplay);
+        //}
+
+        public void GameOver()
         {
-            _coinManager.OnCoinUpdated -= _scoreManager.UpdateScore;
+            if (_isGameOver) return;
+            _isGameOver = true;
+            Debug.Log("Game Over!");
+            _scoreManager.GameOver();
         }
 
-        if (_levelManager != null && _scoreManager != null)
+        public void ResetGame()
         {
-            _levelManager.OnLevelChanged -= _scoreManager.UpdateLevel;
-        }
-
-        if (_scoreManager != null)
-        {
-            _scoreManager.OnGameStarted -= ResetGame;
-        }
-    }
-
-    public void LevelUp()
-    {
-        if (_levelManager.Level < _levelManager.MaxLevel)
-        {
+            if (_isGameOver) _coinManager.ResetScore();
             SceneLoader.LoadSceneStatic(SceneLoader.SceneEnum.Gameplay);
+            Debug.Log("Game Reset!");
         }
-
-        if (_levelManager.Level >= _levelManager.MaxLevel)
-        {
-            _scoreManager.GameDone();
-        }
-    }
-
-    //public void LevelDown()
-    //{
-    //    if (_levelManager.Level > 1) _levelManager.LevelDown();
-    //    SceneLoader.LoadSceneStatic(SceneLoader.SceneEnum.Gameplay);
-    //}
-
-    public void GameOver()
-    {
-        if (_isGameOver) return;
-        _isGameOver = true;
-        Debug.Log("Game Over!");
-        _scoreManager.GameOver();
-    }
-
-    public void ResetGame()
-    {
-        if (_isGameOver) _coinManager.ResetScore();
-        SceneLoader.LoadSceneStatic(SceneLoader.SceneEnum.Gameplay);
-        Debug.Log("Game Reset!");
     }
 }
