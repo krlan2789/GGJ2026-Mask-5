@@ -179,7 +179,7 @@ namespace GGJ_2026_Mask_5.Behaviours
             if (collision.gameObject.CompareTag(ConstantHelper.Tags.PORTAL))
             {
                 var floor = collision.gameObject.GetComponent<FloorManager>();
-                if (floor.IsExit) _hintManager.ShowHint("Double tap S or Down Arrow to Next Floor");
+                if (floor != null && floor.IsExit) _hintManager.ShowHint("Double tap S or Down Arrow to Next Floor");
                 PerformToTeleport = true;
             } else
             if (collision.gameObject.CompareTag(ConstantHelper.Tags.HIDABLE))
